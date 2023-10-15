@@ -161,7 +161,7 @@ class ChatBot:
     async def login_post(self):
         username = request.form.get('username')
         password = request.form.get('password')
-        mfa_code = request.form.get('mfa_code')
+        mfa_code = ""
         next_url = request.form.get('next')
         error = None
 
